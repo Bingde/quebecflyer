@@ -31,6 +31,7 @@
 
     <!-- Plugins -->
     <gap:plugin name="com.google.cordova.admob" source="plugins.cordova.io"/>
+	<gap:plugin name="com.pushbots.push" version="1.2.1" source="plugins.cordova.io" />
     <!-- Core plugins -->
 	
     <!-- Third party plugins -->
@@ -49,7 +50,7 @@
 
         Otherwise, you can specify specific domains:
     -->
-    <access origin="*"/>
+    <access origin="*.pushbots.com" />
     <!--
         <access origin="http://phonegap.com" />                    - allow any secure requests to http://phonegap.com/
         <access origin="http://phonegap.com" subdomains="true" />  - same as above, but including subdomains, such as http://build.phonegap.com/
