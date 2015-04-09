@@ -9,7 +9,7 @@
  <link rel="stylesheet" type="text/css" href="css/index.css" />
  
 </head> 
-<body> 
+<body onload="onBodyLoad()" > 
  
 	<div style = "width:100% ;height:100%" >
 	<div class="app">
@@ -29,3 +29,19 @@
 	</div>
 </body>
 </html>
+<script>
+		
+		
+            function onBodyLoad()
+            {
+                document.addEventListener("deviceready", onDeviceReady, false);
+			
+		if(PushbotsPlugin.isiOS){
+	        PushbotsPlugin.initializeiOS("PUSHBOTS_APP_ID");
+            }
+      if(PushbotsPlugin.isAndroid){
+	PushbotsPlugin.initializeAndroid("55247bde177959166b8b4567", "315679579195");
+				
+            }
+			}
+</script>
