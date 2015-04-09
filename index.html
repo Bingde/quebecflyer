@@ -7,21 +7,15 @@
 <script type="text/javascript" src="cordova.js"></script>
 <script type="text/javascript" src="AdMob.js"></script>     
  <link rel="stylesheet" type="text/css" href="css/index.css" />
- 
+<script type="text/javascript" src="js/index.js"></script>
 </head> 
-<body onload="onBodyLoad()" > 
+<body > 
  
 	<div style = "width:100% ;height:100%" >
-	<div class="app">
-      <div id="deviceready" class="blink">
-          </div>
-        </div>
-		
-		
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
+	
+	<script type="text/javascript">
+         app.initialize();
+    </script>
 		
    
     <iframe id="iframe" frameborder="0" marginheight="0" marginwidth="0" scrolling ="auto"  src="http://www.quebecflyer.com/Site/index.html" width="100%" height="100%" name="iframe" >
@@ -29,19 +23,3 @@
 	</div>
 </body>
 </html>
-<script>
-		
-		
-            function onBodyLoad()
-            {
-                document.addEventListener("deviceready", onDeviceReady, false);
-			
-		if(PushbotsPlugin.isiOS){
-	        PushbotsPlugin.initializeiOS("PUSHBOTS_APP_ID");
-            }
-      if(PushbotsPlugin.isAndroid){
-	PushbotsPlugin.initializeAndroid("55247bde177959166b8b4567", "315679579195");
-				
-            }
-			}
-</script>
